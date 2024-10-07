@@ -1,0 +1,13 @@
+name: docker
+
+on:
+  push:
+    tags:
+      - "*.*.*"
+
+jobs:
+  build:
+    uses: giyomoon/workflows/.github/workflows/docker-build.yml@main
+    with:
+      images: ghcr.io/giyomoon/cozy-stack
+      platforms: linux/arm64
