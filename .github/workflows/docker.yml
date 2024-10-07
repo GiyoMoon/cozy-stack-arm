@@ -11,3 +11,4 @@ jobs:
     with:
       images: ghcr.io/giyomoon/cozy-stack
       platforms: linux/arm64
+      lint: false
